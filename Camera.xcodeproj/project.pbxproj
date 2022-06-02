@@ -9,21 +9,19 @@
 /* Begin PBXBuildFile section */
 		3280BB4A28481DD800DDA864 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3280BB4928481DD800DDA864 /* AppDelegate.swift */; };
 		3280BB4C28481DD800DDA864 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3280BB4B28481DD800DDA864 /* SceneDelegate.swift */; };
-		3280BB4E28481DD800DDA864 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3280BB4D28481DD800DDA864 /* ViewController.swift */; };
-		3280BB5128481DD800DDA864 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3280BB4F28481DD800DDA864 /* Main.storyboard */; };
 		3280BB5328481DD900DDA864 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3280BB5228481DD900DDA864 /* Assets.xcassets */; };
 		3280BB5628481DD900DDA864 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3280BB5428481DD900DDA864 /* LaunchScreen.storyboard */; };
+		32A6CD2928491E5C00B574B3 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A6CD2828491E5C00B574B3 /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3280BB4628481DD800DDA864 /* Camera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Camera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3280BB4928481DD800DDA864 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3280BB4B28481DD800DDA864 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3280BB4D28481DD800DDA864 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3280BB5028481DD800DDA864 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3280BB5228481DD900DDA864 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3280BB5528481DD900DDA864 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3280BB5728481DD900DDA864 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32A6CD2828491E5C00B574B3 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +55,8 @@
 			isa = PBXGroup;
 			children = (
 				3280BB4928481DD800DDA864 /* AppDelegate.swift */,
+				32A6CD2828491E5C00B574B3 /* CameraViewController.swift */,
 				3280BB4B28481DD800DDA864 /* SceneDelegate.swift */,
-				3280BB4D28481DD800DDA864 /* ViewController.swift */,
-				3280BB4F28481DD800DDA864 /* Main.storyboard */,
 				3280BB5228481DD900DDA864 /* Assets.xcassets */,
 				3280BB5428481DD900DDA864 /* LaunchScreen.storyboard */,
 				3280BB5728481DD900DDA864 /* Info.plist */,
@@ -127,7 +124,6 @@
 			files = (
 				3280BB5628481DD900DDA864 /* LaunchScreen.storyboard in Resources */,
 				3280BB5328481DD900DDA864 /* Assets.xcassets in Resources */,
-				3280BB5128481DD800DDA864 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3280BB4E28481DD800DDA864 /* ViewController.swift in Sources */,
+				32A6CD2928491E5C00B574B3 /* CameraViewController.swift in Sources */,
 				3280BB4A28481DD800DDA864 /* AppDelegate.swift in Sources */,
 				3280BB4C28481DD800DDA864 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +143,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3280BB4F28481DD800DDA864 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3280BB5028481DD800DDA864 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3280BB5428481DD900DDA864 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +280,9 @@
 				INFOPLIST_FILE = Camera/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -300,7 +290,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.josephslinker.Camera;
+				PRODUCT_BUNDLE_IDENTIFIER = com.josephslinker.camera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -320,7 +310,9 @@
 				INFOPLIST_FILE = Camera/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -328,7 +320,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.josephslinker.Camera;
+				PRODUCT_BUNDLE_IDENTIFIER = com.josephslinker.camera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
